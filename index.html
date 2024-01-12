@@ -14,16 +14,20 @@
         alt='Logo saying "PING!"'
         class="ping__logo"
       />
-      <h1 class="ping__title">We are launching <span>soon!</span></h1>
+      <h1 class="ping__title" id="test">We are launching <span>soon!</span></h1>
       <p class="ping__text">Subscribe and get notified</p>
       <div class="flex-group ping__form">
-        <input
+        <form onsubmit="submit()">
+          <input
           type="email"
           name="email"
           id="email"
           placeholder="Your email address..."
+          class="ping__input"
         />
-        <button>Notify Me</button>
+        <input type="submit" value="Notify Me" class="ping__submit"></input>
+        </form>
+        
       </div>
       <img
         src="./images/illustration-dashboard.png"

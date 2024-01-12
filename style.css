@@ -151,7 +151,8 @@ h1 span {
 .ping__form input {
     border: 1px solid var(--clr-pale-blue);
     border-radius: 2rem;
-    padding: .6rem 2.5rem;
+    padding: .6rem 0;
+    padding-left: 1rem;
 }
 
 .ping__form input::placeholder {
@@ -190,4 +191,41 @@ footer {
 .ping__copyright {
     color: var(--clr-gray);
     font-size: .813em
+}
+
+@media (min-width: 650px) {
+    h1 {
+        font-size: 2.2rem;
+        margin-top: 2rem;
+    }
+
+    .ping__text {
+        font-size: 17px;
+        margin: 0;
+    }
+
+    .ping__form {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+    }
+
+    .ping__form input {
+        padding: .6rem 0;
+        padding-left: 1rem;
+        width: 50vw;
+        max-width: 450px;
+    }
+
+    .ping__form button {
+        padding: .6rem 3rem;
+    }
+
+    .ping__logo {
+        max-width: 100000px;
+    }
+
+    .ping__dashboard {
+        max-width: 650px;
+    }
 }

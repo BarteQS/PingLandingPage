@@ -5,7 +5,7 @@
 :root {
     /* Colors */
     --clr-blue: hsl(223 87% 63%);
-    --clr-pale-blue: hsl(223 100% 80%);
+    --clr-pale-blue: hsl(223 100% 83%);
     --clr-light-red: hsl(354 100% 66%);
     --clr-gray: hsl(0 0% 59%);
     --clr-very-dark-blue: hsl(209 33% 12%);
@@ -102,6 +102,17 @@ h6 {
 
 body {
     font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -116,15 +127,8 @@ h1 span {
     color: var(--clr-very-dark-blue);
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    margin: 0 2rem;
-    align-items: center;
-}
-
 .ping__logo {
-    max-width: 75px;
+    max-width: 65px;
     height: auto;
     margin-top: 5rem;
 }
@@ -166,4 +170,24 @@ main {
 .ping__dashboard {
     height: auto;
     margin-top: 4rem;
+}
+
+footer {
+    margin-bottom: 2rem;
+}
+
+.ping__social {
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.ping__social img {
+    width: 32px;
+}
+
+.ping__copyright {
+    color: var(--clr-gray);
+    font-size: .813em
 }

@@ -17,13 +17,12 @@
     --fw-bold: 700;
 }
 
-/* Website styling START */
+/* Website styling */
 
 body {
     font-family: 'Libre Franklin', sans-serif;
     display: flex;
     flex-direction: column;
-    margin: 0 2rem;
     align-items: center;
     justify-content: space-between;
 }
@@ -32,6 +31,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.ping__logo {
+    max-width: 65px;
+    margin-top: 5rem;
 }
 
 h1 {
@@ -46,12 +50,6 @@ h1 span {
     color: var(--clr-very-dark-blue);
 }
 
-.ping__logo {
-    max-width: 65px;
-    height: auto;
-    margin-top: 5rem;
-}
-
 .ping__text {
     color: var(--clr-very-dark-blue);
     margin-top: .75rem;
@@ -62,8 +60,9 @@ h1 span {
 }
 
 .ping__form {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     flex-direction: column;
+    gap: .65rem;
 }
 
 .ping__input {
@@ -71,19 +70,21 @@ h1 span {
     border-radius: 2rem;
     padding: .6rem 0;
     padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .ping__input::placeholder {
     color: var(--clr-pale-blue);
 }
 
-.ping__form button {
-    border: 0;
+.ping__submit {
     background-color: var(--clr-blue);
-    border-radius: 2rem;
-    padding: .6rem 2.5rem;
     color: #fff;
     font-weight: var(--fw-semi-bold);
+    border: 0;
+    border-radius: 2rem;
+    padding: .6rem 0;
+    /* TODO Create a shadow */
 }
 
 .ping__dashboard {
@@ -98,7 +99,6 @@ footer {
 .ping__social {
     gap: 1rem;
     margin-bottom: 1.5rem;
-    align-items: center;
     justify-content: center;
 }
 
@@ -111,52 +111,36 @@ footer {
     font-size: .813em
 }
 
-.ping__submit {
-    background-color: var(--clr-blue);
-    color: #fff;
-    font-weight: var(--fw-semi-bold);
-    border: 0;
-    border-radius: 2rem;
-    padding: .6rem 0;
-    margin-left: .75rem;
-}
+/* Media Queries */
 
 @media (min-width: 650px) {
+    .ping__logo {
+        max-width: 100000px;
+    }
+
     h1 {
         font-size: 2.2rem;
         margin-top: 2rem;
     }
 
     .ping__text {
-        font-size: 17px;
-        margin: 0;
+        font-size: 1.063rem;
+        margin: .5rem;
     }
 
     .ping__form {
-        display: flex;
         flex-direction: row;
-        margin-top: 2rem;
+        gap: 1rem;
     }
 
     .ping__input {
-        padding: .6rem 0;
-        padding-left: 1.5rem;
         width: 50vw;
         max-width: 450px;
     }
 
     .ping__submit {
-        padding: .6rem 0;
         width: 20vw;
-        max-width: 220px;
-    }
-
-    .ping__form button {
-        padding: .6rem 3rem;
-    }
-
-    .ping__logo {
-        max-width: 100000px;
+        max-width: 200px;
     }
 
     .ping__dashboard {

@@ -78,10 +78,6 @@ h1 span {
     color: var(--clr-pale-blue);
 }
 
-.ping__input:invalid {
-    border: 1px solid red;
-}
-
 .ping__submit {
     background-color: var(--clr-blue);
     color: #fff;

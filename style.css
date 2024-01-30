@@ -68,6 +68,7 @@ h1 span {
 .ping__input {
     border: 1px solid var(--clr-pale-blue);
     border-radius: 2rem;
+    outline: 0;
     padding: .6rem 0;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -75,6 +76,10 @@ h1 span {
 
 .ping__input::placeholder {
     color: var(--clr-pale-blue);
+}
+
+.ping__input:invalid {
+    border: 1px solid red;
 }
 
 .ping__submit {

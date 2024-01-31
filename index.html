@@ -9,24 +9,28 @@
     <title>Ping | We're launching soon!</title>
   </head>
   <body>
-    <main class="ping">
+    <header>
       <img
         src="./images/logo.svg"
         alt='Logo saying "PING!"'
         class="ping__logo"
       />
-      <h1 class="ping__title" id="test">We are launching <span>soon!</span></h1>
+    </header>
+    <main class="ping">
+      <h1>We are launching <span>soon!</span></h1>
       <p class="ping__text">Subscribe and get notified</p>
         <form class="flex-group ping__form">
           <label for="email" class="sr-only">E-Mail Address</label>
-          <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Your email address..."
-          class="ping__input"
-          required
-        />
+          <div class="input-container">
+            <input
+            type="email"
+            name="email"
+            placeholder="Your email address..."
+            class="ping__input"
+            required
+          />
+          <p class="error__message" id="error__message">Please provide a valid email address</p>
+          </div>
         <input type="submit" value="Notify Me" class="ping__submit"></input>
         </form>
       <img

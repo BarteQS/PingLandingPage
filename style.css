@@ -34,7 +34,6 @@ main {
 }
 
 .ping__logo {
-    max-width: 65px;
     margin-top: 5rem;
 }
 
@@ -138,10 +137,6 @@ footer {
     justify-content: center;
 }
 
-.ping__social img {
-    width: 32px;
-}
-
 .ping__copyright {
     color: var(--clr-gray);
     font-size: .813em
@@ -150,13 +145,9 @@ footer {
 /* Media Queries */
 
 @media (min-width: 650px) {
-    .ping__logo {
-        max-width: 100000px;
-    }
 
     h1 {
         font-size: 2.2rem;
-        /* margin-top: 2rem; */
     }
 
     .ping__text {
